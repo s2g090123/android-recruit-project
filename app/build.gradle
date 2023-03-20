@@ -83,5 +83,8 @@ dependencies {
     implementation "io.coil-kt:coil-svg:$coil_version"
 
     // gson
-    implementation 'com.google.code.gson:gson:2.10'
+    implementation "com.google.code.gson:gson:$gson_version"
+
+    // datastore
+    implementation "androidx.datastore:datastore-preferences:$datastore_version"
 }

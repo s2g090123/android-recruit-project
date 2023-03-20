@@ -87,4 +87,7 @@ dependencies {
 
     // datastore
     implementation "androidx.datastore:datastore-preferences:$datastore_version"
+
+    // testing
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutine_version"
 }

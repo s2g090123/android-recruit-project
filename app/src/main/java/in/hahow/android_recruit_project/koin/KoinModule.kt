@@ -24,7 +24,7 @@ val module = module {
     // single
     single { CourseDatabase.getInstance(androidContext()) }
     single {
-        CourseRepository(androidApplication(), get<CourseLocalSource>(), get<CourseRemoteSource>())
+        CourseRepository(get<CourseLocalSource>(), get<CourseRemoteSource>())
     }
     single {
         CourseDataStore(androidApplication())
@@ -32,7 +32,7 @@ val module = module {
 
     // factory
     factory { (get() as CourseDatabase).getDao() }
-    factory { CourseRemoteSource() }
+    factory { CourseRemoteSource(androidApplication()) }
     factory { CourseLocalSource(get()) }
 
 }

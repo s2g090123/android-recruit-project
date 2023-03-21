@@ -38,7 +38,7 @@ data class CourseRemoteData(
             it.status ?: return@mapNotNull null
             it.coverImageUrl ?: return@mapNotNull null
             it.title ?: return@mapNotNull null
-            val time = it.proposalDueTime?.run { parseTime(this) } ?: return@mapNotNull null
+            val time = it.proposalDueTime?.run { parseTime(this) }
             CourseLocalData(
                 status = it.status,
                 title = it.title,

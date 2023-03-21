@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">android-recruit-project</string>
+    <string name="course_incubating_proportion">%1$d / %2$d 人</string>
+    <string name="course_publish_percentage">%1$d%%</string>
+    <string name="course_remaining_days">倒數%1$d天</string>
+    <string name="course_incubating_label">募資中</string>
+    <string name="course_published_label">已開課</string>
+    <string name="course_success_label">已結束</string>
 </resources>

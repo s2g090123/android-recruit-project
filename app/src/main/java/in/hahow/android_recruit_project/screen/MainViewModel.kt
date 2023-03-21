@@ -10,6 +10,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+import java.util.*
 
 class MainViewModel(
     private val repository: BaseRepository,
@@ -19,6 +20,8 @@ class MainViewModel(
 
     val courses = repository.getCourseFlow()
         .stateIn(viewModelScope, SharingStarted.Eagerly, emptyList())
+
+    val currentDate = Date()
 
     init {
         viewModelScope.launch(dispatcherProvider.io) {

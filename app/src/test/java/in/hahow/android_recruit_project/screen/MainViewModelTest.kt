@@ -2,8 +2,8 @@ package `in`.hahow.android_recruit_project.screen
 
 import `in`.hahow.android_recruit_project.TestCoroutineEnvironment
 import `in`.hahow.android_recruit_project.data.BaseRepository
+import `in`.hahow.android_recruit_project.data.CourseDataFactory
 import `in`.hahow.android_recruit_project.data.FakeRepository
-import `in`.hahow.android_recruit_project.data.local.CourseDataFactory
 import `in`.hahow.android_recruit_project.datastore.BaseDataStore
 import `in`.hahow.android_recruit_project.datastore.FakeDataStore
 import `in`.hahow.android_recruit_project.rule.MainDispatcherRule

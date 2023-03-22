@@ -12,15 +12,12 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.printToLog
 import androidx.test.core.app.ApplicationProvider
-import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Rule
 import org.junit.Test
-import org.junit.runner.RunWith
 import java.util.*
 import java.util.concurrent.TimeUnit
 import kotlin.math.min
 
-@RunWith(AndroidJUnit4::class)
 class MainScreenTest {
 
     companion object {

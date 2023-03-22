@@ -58,3 +58,6 @@
 - AndroidTest
   - CourseLocalSourceTest
   - MainScreenTest(UI)
+
+## 影片
+https://user-images.githubusercontent.com/32809761/226888312-5b4f9387-7435-4bfa-b914-7bc2df8244af.mp4

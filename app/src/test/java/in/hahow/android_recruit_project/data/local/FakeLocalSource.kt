@@ -7,11 +7,11 @@ class FakeLocalSource : BaseLocalSource {
 
     private val sources = MutableStateFlow<List<CourseLocalData>>(emptyList())
 
-    override fun getSources(): Flow<List<CourseLocalData>> {
+    override fun getCourses(): Flow<List<CourseLocalData>> {
         return sources
     }
 
-    override suspend fun insertSources(sources: List<CourseLocalData>) {
+    override suspend fun insertCourses(sources: List<CourseLocalData>) {
         this.sources.value = sources
     }
 }

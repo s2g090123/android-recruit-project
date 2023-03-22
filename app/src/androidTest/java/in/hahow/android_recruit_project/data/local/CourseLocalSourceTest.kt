@@ -35,15 +35,15 @@ class CourseLocalSourceTest {
 
     @Test
     fun localSource_getSources_expectsEmpty() = runTest {
-        val result = localSource.getSources().first()
+        val result = localSource.getCourses().first()
         assertThat(result, `is`(emptyList()))
     }
 
     @Test
     fun localSource_insertSources_expectsList() = runTest {
         val courses = CourseDataFactory.createCourses()
-        localSource.insertSources(courses)
-        val result = localSource.getSources().first()
+        localSource.insertCourses(courses)
+        val result = localSource.getCourses().first()
         assertThat(result, `is`(courses))
     }
 }

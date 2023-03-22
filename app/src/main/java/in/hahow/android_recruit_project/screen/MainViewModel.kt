@@ -15,7 +15,7 @@ import java.util.*
 class MainViewModel(
     private val repository: BaseRepository,
     private val dataStore: BaseDataStore,
-    private val dispatcherProvider: DispatcherProvider = DefaultDispatcherProvider
+    dispatcherProvider: DispatcherProvider = DefaultDispatcherProvider
 ) : ViewModel() {
 
     val courses = repository.getCourseFlow()

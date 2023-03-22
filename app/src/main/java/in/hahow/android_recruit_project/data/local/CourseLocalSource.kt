@@ -7,11 +7,11 @@ class CourseLocalSource(
     private val dao: CourseDao
 ) : BaseLocalSource {
 
-    override fun getSources(): Flow<List<CourseLocalData>> {
+    override fun getCourses(): Flow<List<CourseLocalData>> {
         return dao.getCourses()
     }
 
-    override suspend fun insertSources(sources: List<CourseLocalData>) {
+    override suspend fun insertCourses(sources: List<CourseLocalData>) {
         dao.insertCourses(sources)
     }
 }

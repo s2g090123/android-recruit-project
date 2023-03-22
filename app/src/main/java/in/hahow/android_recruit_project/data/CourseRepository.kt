@@ -12,7 +12,7 @@ class CourseRepository(
 ) : BaseRepository {
 
     override fun getCourseFlow(): Flow<List<CourseLocalData>> {
-        return localSource.getSources()
+        return localSource.getCourses()
     }
 
     override suspend fun updateCourse() {
@@ -20,7 +20,7 @@ class CourseRepository(
             val remoteData = remoteSource.getRemoteCourseData()
             val localData = remoteData.toLocal()
             localData?.let {
-                localSource.insertSources(it)
+                localSource.insertCourses(it)
             }
         } catch (e: IOException) {
             e.printStackTrace()

@@ -39,7 +39,7 @@ import kotlin.math.min
 fun MainScreen(
     modifier: Modifier = Modifier,
     currentDate: Date,
-    courses: List<CourseLocalData>,
+    courses: List<CourseLocalData>
 ) {
     LazyColumn(
         modifier = modifier,

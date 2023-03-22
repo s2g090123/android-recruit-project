@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "successCriteria": {
+        "numSoldTickets": 30
+      },
+      "numSoldTickets": 0,
+      "status": "INCUBATING",
+      "proposalDueTime": "2023-06-06T16:00:00.000Z",
+      "coverImageUrl": "https://images.api.hahow.in/images/614eca15a39712000619b672",
+      "title": "學習 AI 一把抓：點亮人工智慧技能樹"
+    }
+  ]
+}

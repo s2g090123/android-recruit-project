@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.Flow
 interface CourseDao {
 
     @Query("SELECT * FROM course")
-    fun getGames(): Flow<List<CourseLocalData>>
+    fun getCourses(): Flow<List<CourseLocalData>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertCourses(courses: List<CourseLocalData>)

@@ -8,7 +8,7 @@ class CourseLocalSource(
 ) : BaseLocalSource {
 
     override fun getSources(): Flow<List<CourseLocalData>> {
-        return dao.getGames()
+        return dao.getCourses()
     }
 
     override suspend fun insertSources(sources: List<CourseLocalData>) {
